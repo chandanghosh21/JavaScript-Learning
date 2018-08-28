@@ -4,3 +4,7 @@ git checkout <brnach_name>
 git add <dot means ALL> (introduce file to git locally)
 git diff (difference in file)
 git commit -am "I am collecting GIT COMMAND"
+git log (histoy of commit)
+git push origin <brnach_name>
+git pull origin <brnach_name>
+Learning how to Merge
