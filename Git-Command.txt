@@ -3,3 +3,4 @@ git fetch (download all the branch)
 git checkout <brnach_name>
 git add <dot means ALL> (introduce file to git locally)
 git diff (difference in file)
+git commit -am "I am collecting GIT COMMAND"
