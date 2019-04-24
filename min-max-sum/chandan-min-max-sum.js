@@ -52,6 +52,7 @@ function getMaxOrMin(arr, option) {
     return value;
 }
 
+
 var arr = [5,10,45,100,80,7,9,108,1,500];
 var value = getMaxOrMin(arr,'sum');
 console.log(value);
