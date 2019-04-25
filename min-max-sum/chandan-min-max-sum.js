@@ -23,7 +23,10 @@ class MaxMin {
     }
 }
 
-class Sum extends MaxMin  {
+class MaxMinSum extends MaxMin  {
+    constructor(arr) {
+        super(arr);
+    }
     getSum() {
     var sum = 0;
     for(var i=0; i<this.arr.length; i++) {
@@ -33,8 +36,8 @@ class Sum extends MaxMin  {
     }   
 }
 
-function getMaxOrMin(arr, option) {
-    var num = new Sum(arr);
+function getMaxOrMinOrSum(arr, option) {
+    var num = new MaxMinSum(arr);
     switch(option.toUpperCase()) {
         case 'MAX': 
             value = num.getMax();
@@ -46,7 +49,7 @@ function getMaxOrMin(arr, option) {
             value = num.getSum();
         break;
         default:
-            value = "Invalid option. Provider 'MIN' or 'MAX' or 'SUM'";
+            value = "Invalid option. Provide 'MIN' or 'MAX' or 'SUM'";
         break;
     }
     return value;
@@ -54,5 +57,9 @@ function getMaxOrMin(arr, option) {
 
 
 var arr = [5,10,45,100,80,7,9,108,1,500];
-var value = getMaxOrMin(arr,'sum');
+var value = getMaxOrMinOrSum(arr,'max');
+console.log(value);
+value = getMaxOrMinOrSum(arr,'min');
+console.log(value);
+value = getMaxOrMinOrSum(arr,'sum');
 console.log(value);
